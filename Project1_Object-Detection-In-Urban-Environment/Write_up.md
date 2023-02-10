@@ -49,7 +49,8 @@ To monitor the training, you can launch a tensorboard instance by running `pytho
 #### Dataset analysis
 
 Dataset is very skewed in terms of number of samples available for each class. Class 1 of cars have maximum samples. Class 4 of cyclists is very rare in the dataset, followed by Class 2 of pedestrians.
-     <img src="image/class.png" width=50% height=50%>
+
+<img src="image/class.png" width=50% height=50%>
 
 
 #### Cross validation
