@@ -85,20 +85,21 @@ I stopped training at step 3k because the model seemed to start overfitting.
 ### Result
 
 #### Training result
-    <img src="image/tensorbord_Loss.png" width=50% height=50%>
-    <img src="image/tensorbord_pre.png" width=50% height=50%>
-    <img src="image/tensorbord_recall.png" width=50% height=50%>
+
+   <img src="image/tensorbord_Loss.png" width=50% height=50%>
+   <img src="image/tensorbord_pre.png" width=50% height=50%>
+   <img src="image/tensorbord_recall.png" width=50% height=50%>
 
 
 #### Test result
 
 `segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord`
-    <img src="image/animation_0.gif" width=50% height=50%>
+   <img src="image/animation_0.gif" width=50% height=50%>
 
 
 `segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord`
-    <img src="image/animation_1.gif" width=50% height=50%>
+   <img src="image/animation_1.gif" width=50% height=50%>
 
 
 `segment-12012663867578114640_820_000_840_000_with_camera_labels.tfrecord`
-    <img src="image/animation_2.gif" width=50% height=50%>
+   <img src="image/animation_2.gif" width=50% height=50%>
