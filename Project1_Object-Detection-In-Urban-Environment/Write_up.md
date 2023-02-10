@@ -49,7 +49,8 @@ To monitor the training, you can launch a tensorboard instance by running `pytho
 #### Dataset analysis
 
 Dataset is very skewed in terms of number of samples available for each class. Class 1 of cars have maximum samples. Class 4 of cyclists is very rare in the dataset, followed by Class 2 of pedestrians.
-     <img src="image/class.png" width=50% height=50%>
+
+<img src="image/class.png" width=50% height=50%>
 
 
 #### Cross validation
@@ -62,7 +63,7 @@ But I added 3 test files.
 Used SGD with momentum.
 Rate decay: Cosine anealing. 
 Changed warmup learning rate to 5e-4, warmup steps to 300 and total steps to 3000 to get the desired learning rate function.
-
+```
 optimizer {
     momentum_optimizer {
       learning_rate {
@@ -77,27 +78,28 @@ optimizer {
     }
     use_moving_average: false
 }
-
+```
 I stopped training at step 3k because the model seemed to start overfitting.
 
 
 ### Result
 
 #### Training result
-    <img src="image/tensorbord_Loss.png" width=50% height=50%>
-    <img src="image/tensorbord_pre.png" width=50% height=50%>
-    <img src="image/tensorbord_recall.png" width=50% height=50%>
+
+   <img src="image/tensorbord_Loss.png" width=50% height=50%>
+   <img src="image/tensorbord_pre.png" width=50% height=50%>
+   <img src="image/tensorbord_recall.png" width=50% height=50%>
 
 
 #### Test result
 
 `segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord`
-    <img src="image/animation_0.gif" width=50% height=50%>
+   <img src="image/animation_0.gif" width=50% height=50%>
 
 
 `segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord`
-    <img src="image/animation_1.gif" width=50% height=50%>
+   <img src="image/animation_1.gif" width=50% height=50%>
 
 
 `segment-12012663867578114640_820_000_840_000_with_camera_labels.tfrecord`
-    <img src="image/animation_2.gif" width=50% height=50%>
+   <img src="image/animation_2.gif" width=50% height=50%>
