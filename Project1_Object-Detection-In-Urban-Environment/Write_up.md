@@ -62,7 +62,7 @@ But I added 3 test files.
 Used SGD with momentum.
 Rate decay: Cosine anealing. 
 Changed warmup learning rate to 5e-4, warmup steps to 300 and total steps to 3000 to get the desired learning rate function.
-
+```
 optimizer {
     momentum_optimizer {
       learning_rate {
@@ -77,7 +77,7 @@ optimizer {
     }
     use_moving_average: false
 }
-
+```
 I stopped training at step 3k because the model seemed to start overfitting.
 
 
