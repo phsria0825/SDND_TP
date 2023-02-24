@@ -343,6 +343,3 @@ configs_det.use_labels_as_objects=True
 which results in precision and recall values as 1.This is shown in the following image:
 
 <img src="./img/Figure_2.png" width=50% height=50%>
-
-## Summary of Lidar based 3D Object Detection
-From the project, it is understandable that for a stabilized tracking, lidar should be used . The conversion of range data to point cloud through spatial volumes, or points (or CNN networks) are important for further analysis. The usage of resnet/darknet and YOLO to convert these high dimensional point cloud representations to object detections through bounding boxes is essential for 3D object detection. Evaluating the performance with help of maximal IOU mapping ,mAP, and representing the precision/recall of the bounding boxes are essential to understand the effectiveness of Lidar based detection.
