@@ -102,11 +102,16 @@ Changes are made at `def show_pcl(pcl)` in `objdet_pcl.py`
     viz.run()
 ```
 The Point cloud images:
-    <img src="./img/image_2.png" width=50% height=50%> <img src="./img/image_3.png" width=50% height=50%>
-    <img src="./img/image_4.png" width=50% height=50%> <img src="./img/image_5.png" width=50% height=50%>
-    <img src="./img/image_6.png" width=50% height=50%> <img src="./img/image_7.png" width=50% height=50%>
-    <img src="./img/image_8.png" width=50% height=50%> <img src="./img/image_9.png" width=50% height=50%>
-    <img src="./img/image_10.png" width=50% height=50%> <img src="./img/image_11.png" width=50% height=50%>
+    <img src="./img/image_2.png" width=50% height=50%>
+    <img src="./img/image_3.png" width=50% height=50%>
+    <img src="./img/image_4.png" width=50% height=50%> 
+    <img src="./img/image_5.png" width=50% height=50%>
+    <img src="./img/image_6.png" width=50% height=50%> 
+    <img src="./img/image_7.png" width=50% height=50%>
+    <img src="./img/image_8.png" width=50% height=50%> 
+    <img src="./img/image_9.png" width=50% height=50%>
+    <img src="./img/image_10.png" width=50% height=50%> 
+    <img src="./img/image_11.png" width=50% height=50%>
 
 **note** Stable features include the tail lights, the rear bumper majorly. The exterior and Chassis of the car (like bumper) is the most prominent identifiable feature from the lidar perspective.
 
