@@ -116,6 +116,7 @@ The Point cloud images:
 <img src="./img/image_11.png" width=50% height=50%>
 
 **note**
+
 Stable features include the tail lights, the rear bumper majorly. The exterior and Chassis of the car (like bumper) is the most prominent identifiable feature from the lidar perspective.
 
 ## Step-2: Creaate BEV from Lidar PCL
