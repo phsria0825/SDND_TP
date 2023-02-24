@@ -68,7 +68,7 @@ Changes are made at `def show_range_image(frame, lidar_name)` in `objdet_pcl.py`
 ```
 
 The range image sample:
-<img src="img/imge_1.png" width=50% height=50%>
+ <img src="./img/imge_1.png" width=50% height=50%>
 
 Then, we use the Open3D library to display the lidar point cloud on a 3D viewer and identify 10 images from point cloud
 
@@ -102,11 +102,12 @@ Changes are made at `def show_pcl(pcl)` in `objdet_pcl.py`
     viz.run()
 ```
 The Point cloud images:
-<img src="img/imge_2.png" width=50% height=50%> <img src="img/imge_3.png" width=50% height=50%>
-<img src="img/imge_4.png" width=50% height=50%> <img src="img/imge_5.png" width=50% height=50%>
-<img src="img/imge_6.png" width=50% height=50%> <img src="img/imge_7.png" width=50% height=50%>
-<img src="img/imge_8.png" width=50% height=50%> <img src="img/imge_9.png" width=50% height=50%>
-<img src="img/imge_10.png" width=50% height=50%> <img src="img/imge_11.png" width=50% height=50%>
+
+ <img src="./img/imge_2.png" width=50% height=50%> <img src="img/imge_3.png" width=50% height=50%>
+ <img src="./img/imge_4.png" width=50% height=50%> <img src="img/imge_5.png" width=50% height=50%>
+ <img src="./img/imge_6.png" width=50% height=50%> <img src="img/imge_7.png" width=50% height=50%>
+ <img src="./img/imge_8.png" width=50% height=50%> <img src="img/imge_9.png" width=50% height=50%>
+ <img src="./img/imge_10.png" width=50% height=50%> <img src="img/imge_11.png" width=50% height=50%>
 
 **note** Stable features include the tail lights, the rear bumper majorly. The exterior and Chassis of the car (like bumper) is the most prominent identifiable feature from the lidar perspective.
 
