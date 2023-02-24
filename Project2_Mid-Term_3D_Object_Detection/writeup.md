@@ -145,7 +145,7 @@ Changes are made at `def bev_from_pcl(lidar_pcl, configs)` in `objdet_pcl.py`
     show_pcl(lidar_pcl_cpy)
 ```
 The BEV-map:
-<img src="./img/BEV.png" width=50% height=50%>
+ <img src="./img/BEV.png" width=50% height=50%>
 
 
 **Compute intensity layer of the BEV map**
@@ -186,7 +186,7 @@ The BEV-map:
     cv2.destroyAllWindows()
 ```
 The corresponding intensity channel:
-<img src="./img/BEV_intensity.png" width=50% height=50%>
+ <img src="./img/BEV_intensity.png" width=50% height=50%>
 
 **Compute height layer of the BEV map**
 ```python
@@ -212,7 +212,7 @@ The corresponding intensity channel:
     cv2.destroyAllWindows()
 ```
 The corresponding height channel:
-<img src="./img/BEV_height.png" width=50% height=50%>
+ <img src="./img/BEV_height.png" width=50% height=50%>
 
 ## Step-3: Model Based Object Detection in BEV Image
 
@@ -245,7 +245,7 @@ print(detections)
 As the model input is a three-channel BEV map, the detected objects will be returned with coordinates and properties in the BEV coordinate space. Thus, before the detections can move along in the processing pipeline, they need to be converted into metric coordinates in vehicle space.
 
 A sample preview of the bounding box images:
-<img src="./img/detect_object.png" width=50% height=50%>
+ <img src="./img/detect_object.png" width=50% height=50%>
 
 ## Step-4: Performance detection for 3D Object Detection
 
@@ -320,14 +320,14 @@ false_positives = len(detections) - true_positives
 ```
 
 The precision recall curve is plotted showing similar results of precision = 0.977, recall = 0.710
-<img src="./img/Figure_1.png" width=50% height=50%>
+ <img src="./img/Figure_1.png" width=50% height=50%>
 
 In the next step, we set the
 ```python
 configs_det.use_labels_as_objects=True
 ```
 which results in precision and recall values as 1.This is shown in the following image:
-<img src="./img/Figure_2.png" width=50% height=50%>
+ <img src="./img/Figure_2.png" width=50% height=50%>
 
 ## Summary of Lidar based 3D Object Detection
 From the project, it is understandable that for a stabilized tracking, lidar should be used . The conversion of range data to point cloud through spatial volumes, or points (or CNN networks) are important for further analysis. The usage of resnet/darknet and YOLO to convert these high dimensional point cloud representations to object detections through bounding boxes is essential for 3D object detection. Evaluating the performance with help of maximal IOU mapping ,mAP, and representing the precision/recall of the bounding boxes are essential to understand the effectiveness of Lidar based detection.
