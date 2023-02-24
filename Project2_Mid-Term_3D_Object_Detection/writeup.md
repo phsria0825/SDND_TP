@@ -68,7 +68,8 @@ Changes are made at `def show_range_image(frame, lidar_name)` in `objdet_pcl.py`
 ```
 
 The range image sample:
-    <img src="./img/image_1.png" width=50% height=50%>
+
+    <img src="./img/image_1.png" width=100% height=100%>
 
 Then, we use the Open3D library to display the lidar point cloud on a 3D viewer and identify 10 images from point cloud
 
@@ -102,6 +103,7 @@ Changes are made at `def show_pcl(pcl)` in `objdet_pcl.py`
     viz.run()
 ```
 The Point cloud images:
+
     <img src="./img/image_2.png" width=50% height=50%>
     <img src="./img/image_3.png" width=50% height=50%>
     <img src="./img/image_4.png" width=50% height=50%> 
