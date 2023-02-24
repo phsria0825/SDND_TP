@@ -67,8 +67,9 @@ Changes are made at `def show_range_image(frame, lidar_name)` in `objdet_pcl.py`
     img_range_intensity = np.vstack([ri_range, ri_intensity]).astype(np.uint8)
 ```
 
-The range image sample
-    <img src="./img/image_1.png" width=100% height=100%>
+The range image sample:
+
+<img src="./img/image_1.png" width=100% height=100%>
 
 Then, we use the Open3D library to display the lidar point cloud on a 3D viewer and identify 10 images from point cloud
 
@@ -101,17 +102,18 @@ Changes are made at `def show_pcl(pcl)` in `objdet_pcl.py`
     viz.register_key_callback(262, close_callback)
     viz.run()
 ```
-The Point cloud images
-    <img src="./img/image_2.png" width=50% height=50%>
-    <img src="./img/image_3.png" width=50% height=50%>
-    <img src="./img/image_4.png" width=50% height=50%> 
-    <img src="./img/image_5.png" width=50% height=50%>
-    <img src="./img/image_6.png" width=50% height=50%> 
-    <img src="./img/image_7.png" width=50% height=50%>
-    <img src="./img/image_8.png" width=50% height=50%> 
-    <img src="./img/image_9.png" width=50% height=50%>
-    <img src="./img/image_10.png" width=50% height=50%> 
-    <img src="./img/image_11.png" width=50% height=50%>
+The Point cloud images:
+
+<img src="./img/image_2.png" width=50% height=50%>
+<img src="./img/image_3.png" width=50% height=50%>
+<img src="./img/image_4.png" width=50% height=50%> 
+<img src="./img/image_5.png" width=50% height=50%>
+<img src="./img/image_6.png" width=50% height=50%> 
+<img src="./img/image_7.png" width=50% height=50%>
+<img src="./img/image_8.png" width=50% height=50%> 
+<img src="./img/image_9.png" width=50% height=50%>
+<img src="./img/image_10.png" width=50% height=50%> 
+<img src="./img/image_11.png" width=50% height=50%>
 
 **note** Stable features include the tail lights, the rear bumper majorly. The exterior and Chassis of the car (like bumper) is the most prominent identifiable feature from the lidar perspective.
 
@@ -150,7 +152,8 @@ Changes are made at `def bev_from_pcl(lidar_pcl, configs)` in `objdet_pcl.py`
     show_pcl(lidar_pcl_cpy)
 ```
 The BEV-map:
-    <img src="./img/BEV.png" width=50% height=50%>
+    
+<img src="./img/BEV.png" width=50% height=50%>
 
 
 **Compute intensity layer of the BEV map**
@@ -191,7 +194,8 @@ The BEV-map:
     cv2.destroyAllWindows()
 ```
 The corresponding intensity channel:
-    <img src="./img/BEV_intensity.png" width=50% height=50%>
+
+<img src="./img/BEV_intensity.png" width=50% height=50%>
 
 **Compute height layer of the BEV map**
 ```python
@@ -217,7 +221,8 @@ The corresponding intensity channel:
     cv2.destroyAllWindows()
 ```
 The corresponding height channel:
-    <img src="./img/BEV_height.png" width=50% height=50%>
+
+<img src="./img/BEV_height.png" width=50% height=50%>
 
 ## Step-3: Model Based Object Detection in BEV Image
 
@@ -250,7 +255,8 @@ print(detections)
 As the model input is a three-channel BEV map, the detected objects will be returned with coordinates and properties in the BEV coordinate space. Thus, before the detections can move along in the processing pipeline, they need to be converted into metric coordinates in vehicle space.
 
 A sample preview of the bounding box images:
-    <img src="./img/detect_object.png" width=50% height=50%>
+
+<img src="./img/detect_object.png" width=50% height=50%>
 
 ## Step-4: Performance detection for 3D Object Detection
 
@@ -324,15 +330,17 @@ false_negatives = all_positives - true_positives
 false_positives = len(detections) - true_positives
 ```
 
-The precision recall curve is plotted showing similar results of precision = 0.977, recall = 0.710
-    <img src="./img/Figure_1.png" width=50% height=50%>
+The precision recall curve is plotted showing similar results of precision = 0.977, recall = 0.710:
+    
+<img src="./img/Figure_1.png" width=50% height=50%>
 
 In the next step, we set the
 ```python
 configs_det.use_labels_as_objects=True
 ```
 which results in precision and recall values as 1.This is shown in the following image:
-    <img src="./img/Figure_2.png" width=50% height=50%>
+
+<img src="./img/Figure_2.png" width=50% height=50%>
 
 ## Summary of Lidar based 3D Object Detection
 From the project, it is understandable that for a stabilized tracking, lidar should be used . The conversion of range data to point cloud through spatial volumes, or points (or CNN networks) are important for further analysis. The usage of resnet/darknet and YOLO to convert these high dimensional point cloud representations to object detections through bounding boxes is essential for 3D object detection. Evaluating the performance with help of maximal IOU mapping ,mAP, and representing the precision/recall of the bounding boxes are essential to understand the effectiveness of Lidar based detection.
