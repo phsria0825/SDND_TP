@@ -13,7 +13,9 @@ This section should contain a brief description of the steps to follow to run th
 
 2. There was no tf record file in the /data/test folder, so I received the file name below and tested it.
 `segment-12200383401366682847_2552_140_2572_140_with_camera_labels`
+
 `segment-1208303279778032257_1360_000_1380_000_with_camera_labels`
+
 `segment-12012663867578114640_820_000_840_000_with_camera_labels`
 
 3. Now you are ready for training. As we explain during the course, the Tf Object Detection API relies on **config files**. The config that we will use for this project is `pipeline.config`, which is the config for a SSD Resnet 50 640x640 model. You can learn more about the Single Shot Detector [here](https://arxiv.org/pdf/1512.02325.pdf).
