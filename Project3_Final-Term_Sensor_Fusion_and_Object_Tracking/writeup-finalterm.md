@@ -536,3 +536,8 @@ self.R = np.matrix([[params.sigma_cam_i**2, 0], # measurement noise covariance m
 The following image shows the rmse plot for multiple tracking:
 
 <img src="./img/Figure_5_final.png">
+
+
+Final-Project result:
+
+<img src="./img/result_gif.gif">
